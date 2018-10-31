@@ -42,4 +42,5 @@ end
 
 group :test do
   gem 'minitest'
+  gem 'minitest-spec-rails'
 end
