@@ -9,6 +9,8 @@ cache:
 script:
   - gem install colorize
   - bundle exec rails rubocop .
+  - bundle exec rake test:setup
+  - bundle exec rake test
 branches:
   only:
     - master
