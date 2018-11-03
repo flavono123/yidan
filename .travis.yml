@@ -1,0 +1,14 @@
+sudo: false
+dist: trusty
+language: ruby
+cache:
+  bundler: true
+  directories:
+    - vendor/bundle
+    - tmp/rubocop_cache
+script:
+  - gem install colorize
+  - bundle exec rails rubocop .
+branches:
+  only:
+    - master
