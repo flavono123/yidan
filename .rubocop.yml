@@ -1,0 +1,22 @@
+AllCops:
+  UseCache: true
+  CacheRootDirectory: tmp
+  MaxFilesInCache: 1000
+  TargetRubyVersion: 2.5
+  TargetRailsVersion: 5.2
+  Exclude:
+    - 'db/schema.rb' 
+    - 'config/**/*'
+    - 'bin/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false

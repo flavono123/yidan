@@ -10,7 +10,7 @@ describe StudiesController do
 
   describe '#show' do
     it 'should work' do
-      get :show, params: {id: 1}
+      get :show, params: { id: 1 }
       response.status.must_equal(200)
       study = JSON.parse response.body
       study['name'].must_equal('New Study')

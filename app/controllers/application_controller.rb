@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   before_action :set_record, only: :show
-  
+
   attr_reader :records, :record
 
   def index
@@ -12,14 +12,10 @@ class ApplicationController < ActionController::API
     render json: record
   end
 
-
   private
 
   def model
     raise NotImplementedError
-  end
-
-  def permitted_params
   end
 
   def set_record
