@@ -20,6 +20,6 @@ group :development do
 end
 
 group :test do
-  gem 'minitest'
+  gem 'database_cleaner'
   gem 'minitest-spec-rails'
 end
