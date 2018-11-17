@@ -12,7 +12,7 @@ cache:
     - tmp/rubocop_cache
 script:
   - gem install colorize
-  - bundle exec rails rubocop .
+  - bundle exec rubocop .
   - bundle exec rake test:setup
   - bundle exec rake test
 branches:

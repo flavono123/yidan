@@ -8,6 +8,7 @@ AllCops:
     - 'db/schema.rb' 
     - 'config/**/*'
     - 'bin/**/*'
+    - 'vendor/bundle/**/*'
 
 Metrics/LineLength:
   Max: 120
@@ -19,4 +20,7 @@ Style/Documentation:
   Enabled: false
 
 Style/ClassAndModuleChildren:
+  Enabled: false
+
+Layout/SpaceAroundEqualsInParameterDefault:
   Enabled: false
