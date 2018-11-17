@@ -1,0 +1,21 @@
+sudo: false
+dist: trusty
+services:
+  - postgresql
+language: ruby
+rvm:
+  - 2.5.3
+cache:
+  bundler: true
+  directories:
+    - vendor/bundle
+    - tmp/rubocop_cache
+script:
+  - gem install colorize
+  - bundle exec rubocop .
+  - bundle exec rake test:setup
+  - bundle exec rake test
+branches:
+  only:
+    - master
+    - /^rails\/.*$/
