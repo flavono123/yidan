@@ -1,6 +1,10 @@
 sudo: false
 dist: trusty
+services:
+  - postgresql
 language: ruby
+rvm:
+  - 2.5.3
 cache:
   bundler: true
   directories:
